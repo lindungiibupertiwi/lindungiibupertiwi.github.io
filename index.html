@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yayasan Lindungi Ibu Pertiwi — Lindungi Alam, Lestarikan Kehidupan</title>
+  <meta name="description" content="Yayasan Lindungi Ibu Pertiwi berkomitmen menjaga laut, mangrove, dan keanekaragaman hayati Indonesia bersama masyarakat pesisir.">
+
+  <!-- Google Fonts: Poppins (heading) & Open Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <!-- AOS (Animate On Scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- Custom CSS (Tahap 2 — sudah lengkap) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       A. NAVBAR
+  ========================================================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNavbar">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
+          <img src="assets/img/logo.png" alt="Logo Yayasan Lindungi Ibu Pertiwi" height="40">
+          <span class="brand-text d-none d-sm-inline">Lindungi Ibu Pertiwi</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Buka menu navigasi">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#hero">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+            <li class="nav-item"><a class="nav-link" href="#program">Program</a></li>
+            <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+            <li class="nav-item"><a class="nav-link" href="#berita">Berita</a></li>
+            <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+          </ul>
+          <a href="#donasi" class="btn btn-donasi">Donasi</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Offcanvas menu untuk mobile & tablet -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+      <div class="offcanvas-header">
+        <a href="#hero" class="d-flex align-items-center gap-2 text-decoration-none">
+          <img src="assets/img/logo.png" alt="Logo Yayasan Lindungi Ibu Pertiwi" height="36">
+          <span class="offcanvas-title" id="mobileMenuLabel">Lindungi Ibu Pertiwi</span>
+        </a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Tutup menu"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#hero" data-bs-dismiss="offcanvas">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tentang" data-bs-dismiss="offcanvas">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#program" data-bs-dismiss="offcanvas">Program</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeri" data-bs-dismiss="offcanvas">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="#berita" data-bs-dismiss="offcanvas">Berita</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak" data-bs-dismiss="offcanvas">Kontak</a></li>
+        </ul>
+        <a href="#donasi" class="btn btn-donasi w-100 mt-3" data-bs-dismiss="offcanvas">Donasi</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =========================================================
+         B. HERO SECTION
+    ========================================================== -->
+    <section id="hero" class="hero-section d-flex align-items-center">
+      <video class="hero-video d-none d-md-block" autoplay muted loop playsinline poster="assets/img/hero-poster.jpg">
+        <source src="assets/video/hero-nature.mp4" type="video/mp4">
+      </video>
+      <img src="https://placehold.co/1920x1080/184E85/FFFFFF?text=Hero+Fallback+Image" alt="Alam Indonesia" class="hero-fallback-img d-md-none">
+      <div class="hero-overlay"></div>
+
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-lg-7 col-xl-6">
+            <p class="eyebrow text-white-50" data-aos="fade-up">Yayasan Lindungi Ibu Pertiwi</p>
+            <h1 class="hero-title text-white" data-aos="fade-up" data-aos-delay="100">
+              LINDUNGI ALAM,<br>LESTARIKAN KEHIDUPAN
+            </h1>
+            <p class="hero-subtitle text-white-75" data-aos="fade-up" data-aos-delay="200">
+              Kami berkomitmen menjaga laut, mangrove, dan keanekaragaman hayati Indonesia bersama masyarakat pesisir di seluruh Nusantara.
+            </p>
+            <div class="hero-cta d-flex flex-column flex-sm-row gap-3" data-aos="fade-up" data-aos-delay="300">
+              <a href="#tentang" class="btn btn-primary-custom">Tentang Kami</a>
+              <a href="#program" class="btn btn-outline-custom">Program Kami</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#tentang" class="scroll-indicator" aria-label="Gulir ke bawah">
+        <i class="bi bi-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- =========================================================
+         C. TENTANG SINGKAT
+    ========================================================== -->
+    <section id="tentang" class="section-padding">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="about-img-wrap">
+              <div class="about-blob"></div>
+              <img src="https://placehold.co/640x760/22C55E/FFFFFF?text=Foto+Kegiatan" alt="Kegiatan lapangan Yayasan Lindungi Ibu Pertiwi" class="img-fluid about-img">
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <p class="eyebrow">Tentang Kami</p>
+            <h2 class="section-title">Menjaga Ibu Pertiwi, Bersama Masyarakat</h2>
+            <p class="section-desc">
+              Yayasan Lindungi Ibu Pertiwi hadir untuk menjembatani konservasi lingkungan pesisir dan laut Indonesia dengan pemberdayaan masyarakat setempat. Kami percaya kelestarian alam hanya dapat terwujud bila masyarakat ikut menjadi penjaganya.
+            </p>
+
+            <div class="row g-3 mt-2">
+              <div class="col-sm-4">
+                <div class="mini-card">
+                  <i class="bi bi-eye"></i>
+                  <h3>Visi</h3>
+                  <p>Nusantara yang lestari dan berkelanjutan.</p>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="mini-card">
+                  <i class="bi bi-flag"></i>
+                  <h3>Misi</h3>
+                  <p>Konservasi berbasis kolaborasi masyarakat.</p>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="mini-card">
+                  <i class="bi bi-heart"></i>
+                  <h3>Nilai</h3>
+                  <p>Profesional, kolaboratif, berkelanjutan.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         D. STATISTIK
+    ========================================================== -->
+    <section id="statistik" class="stats-section">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-6 col-lg-3" data-aos="zoom-in">
+            <div class="stat-item">
+              <i class="bi bi-clipboard-check"></i>
+              <span class="stat-number" data-count="120">0</span><span class="stat-suffix">+</span>
+              <p class="stat-label">Program</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="stat-item">
+              <i class="bi bi-people"></i>
+              <span class="stat-number" data-count="500">0</span><span class="stat-suffix">+</span>
+              <p class="stat-label">Relawan</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+            <div class="stat-item">
+              <i class="bi bi-map"></i>
+              <span class="stat-number" data-count="34">0</span>
+              <p class="stat-label">Provinsi</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+            <div class="stat-item">
+              <i class="bi bi-houses"></i>
+              <span class="stat-number" data-count="210">0</span>
+              <p class="stat-label">Desa Binaan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         E. FOKUS PROGRAM
+    ========================================================== -->
+    <section id="program" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <p class="eyebrow">Apa yang Kami Kerjakan</p>
+          <h2 class="section-title">Fokus Program Kami</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <article class="program-card">
+              <div class="program-img-wrap">
+                <img src="https://placehold.co/480x360/2167B2/FFFFFF?text=Konservasi+Laut" alt="Konservasi Laut" class="img-fluid">
+                <span class="program-icon"><i class="bi bi-water"></i></span>
+              </div>
+              <div class="program-body">
+                <h3>Konservasi Laut</h3>
+                <p>Melindungi terumbu karang dan ekosistem laut Indonesia.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="program-card">
+              <div class="program-img-wrap">
+                <img src="https://placehold.co/480x360/178A45/FFFFFF?text=Mangrove" alt="Mangrove" class="img-fluid">
+                <span class="program-icon"><i class="bi bi-tree"></i></span>
+              </div>
+              <div class="program-body">
+                <h3>Mangrove</h3>
+                <p>Rehabilitasi dan penanaman hutan mangrove pesisir.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <article class="program-card">
+              <div class="program-img-wrap">
+                <img src="https://placehold.co/480x360/22C55E/FFFFFF?text=Keanekaragaman+Hayati" alt="Keanekaragaman Hayati" class="img-fluid">
+                <span class="program-icon"><i class="bi bi-flower1"></i></span>
+              </div>
+              <div class="program-body">
+                <h3>Keanekaragaman Hayati</h3>
+                <p>Menjaga kekayaan spesies flora dan fauna Nusantara.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <article class="program-card">
+              <div class="program-img-wrap">
+                <img src="https://placehold.co/480x360/184E85/FFFFFF?text=Pemberdayaan+Masyarakat" alt="Pemberdayaan Masyarakat" class="img-fluid">
+                <span class="program-icon"><i class="bi bi-people"></i></span>
+              </div>
+              <div class="program-body">
+                <h3>Pemberdayaan Masyarakat</h3>
+                <p>Pelatihan ekonomi berkelanjutan untuk warga pesisir.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="program-card">
+              <div class="program-img-wrap">
+                <img src="https://placehold.co/480x360/2167B2/FFFFFF?text=Perubahan+Iklim" alt="Perubahan Iklim" class="img-fluid">
+                <span class="program-icon"><i class="bi bi-cloud-sun"></i></span>
+              </div>
+              <div class="program-body">
+                <h3>Perubahan Iklim</h3>
+                <p>Mitigasi dan adaptasi dampak perubahan iklim.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <article class="program-card">
+              <div class="program-img-wrap">
+                <img src="https://placehold.co/480x360/178A45/FFFFFF?text=Penelitian" alt="Penelitian" class="img-fluid">
+                <span class="program-icon"><i class="bi bi-clipboard-data"></i></span>
+              </div>
+              <div class="program-body">
+                <h3>Penelitian</h3>
+                <p>Riset ilmiah untuk mendukung kebijakan konservasi.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         F. MENGAPA MEMILIH KAMI
+    ========================================================== -->
+    <section id="mengapa-kami" class="section-padding bg-soft">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <p class="eyebrow">Alasan Bermitra</p>
+          <h2 class="section-title">Mengapa Memilih Kami</h2>
+        </div>
+
+        <div class="row g-4 text-center">
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="reason-item">
+              <span class="reason-icon"><i class="bi bi-award"></i></span>
+              <h3>Profesional</h3>
+              <p>Dikelola tim ahli lingkungan dan pemberdayaan masyarakat.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="reason-item">
+              <span class="reason-icon"><i class="bi bi-people-fill"></i></span>
+              <h3>Kolaboratif</h3>
+              <p>Bekerja sama dengan pemerintah, komunitas, dan mitra global.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="reason-item">
+              <span class="reason-icon"><i class="bi bi-arrow-repeat"></i></span>
+              <h3>Berkelanjutan</h3>
+              <p>Program dirancang untuk dampak jangka panjang.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         G. GALERI PREVIEW
+    ========================================================== -->
+    <section id="galeri" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <p class="eyebrow">Dokumentasi Lapangan</p>
+          <h2 class="section-title">Galeri Kegiatan</h2>
+        </div>
+
+        <div class="masonry-grid" id="galleryGrid">
+          <div class="masonry-item item-tall" data-aos="fade-up">
+            <img src="https://placehold.co/480x640/2167B2/FFFFFF?text=Galeri+1" alt="Galeri kegiatan 1" class="img-fluid">
+          </div>
+          <div class="masonry-item item-wide" data-aos="fade-up" data-aos-delay="100">
+            <img src="https://placehold.co/720x480/22C55E/FFFFFF?text=Galeri+2" alt="Galeri kegiatan 2" class="img-fluid">
+          </div>
+          <div class="masonry-item" data-aos="fade-up" data-aos-delay="200">
+            <img src="https://placehold.co/480x480/184E85/FFFFFF?text=Galeri+3" alt="Galeri kegiatan 3" class="img-fluid">
+          </div>
+          <div class="masonry-item" data-aos="fade-up">
+            <img src="https://placehold.co/480x480/178A45/FFFFFF?text=Galeri+4" alt="Galeri kegiatan 4" class="img-fluid">
+          </div>
+          <div class="masonry-item item-tall" data-aos="fade-up" data-aos-delay="100">
+            <img src="https://placehold.co/480x640/2167B2/FFFFFF?text=Galeri+5" alt="Galeri kegiatan 5" class="img-fluid">
+          </div>
+          <div class="masonry-item item-wide" data-aos="fade-up" data-aos-delay="200">
+            <img src="https://placehold.co/720x480/22C55E/FFFFFF?text=Galeri+6" alt="Galeri kegiatan 6" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="text-center mt-4" data-aos="fade-up">
+          <a href="#" class="btn btn-outline-custom-dark">Lihat Semua</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         H. BERITA TERBARU
+    ========================================================== -->
+    <section id="berita" class="section-padding bg-soft">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <p class="eyebrow">Kabar Terkini</p>
+          <h2 class="section-title">Berita Terbaru</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4" data-aos="fade-up">
+            <article class="news-card">
+              <img src="https://placehold.co/480x300/2167B2/FFFFFF?text=Berita+1" alt="Thumbnail berita 1" class="img-fluid">
+              <div class="news-body">
+                <span class="badge badge-category">Konservasi</span>
+                <h3>Penanaman 10.000 Bibit Mangrove di Pesisir Jawa</h3>
+                <p class="news-date"><i class="bi bi-calendar3"></i> 12 Juni 2026</p>
+                <p class="news-excerpt">Kegiatan penanaman mangrove serentak melibatkan ratusan relawan dan masyarakat pesisir.</p>
+                <a href="#" class="news-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <article class="news-card">
+              <img src="https://placehold.co/480x300/22C55E/FFFFFF?text=Berita+2" alt="Thumbnail berita 2" class="img-fluid">
+              <div class="news-body">
+                <span class="badge badge-category">Pemberdayaan</span>
+                <h3>Pelatihan Ekowisata untuk Warga Desa Binaan</h3>
+                <p class="news-date"><i class="bi bi-calendar3"></i> 28 Mei 2026</p>
+                <p class="news-excerpt">Program pelatihan membekali warga dengan keterampilan pengelolaan ekowisata berkelanjutan.</p>
+                <a href="#" class="news-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <article class="news-card">
+              <img src="https://placehold.co/480x300/184E85/FFFFFF?text=Berita+3" alt="Thumbnail berita 3" class="img-fluid">
+              <div class="news-body">
+                <span class="badge badge-category">Penelitian</span>
+                <h3>Riset Terumbu Karang di WPPNRI 711 Dipublikasikan</h3>
+                <p class="news-date"><i class="bi bi-calendar3"></i> 15 Mei 2026</p>
+                <p class="news-excerpt">Hasil riset menjadi dasar rekomendasi kebijakan konservasi laut nasional.</p>
+                <a href="#" class="news-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         I. MITRA
+    ========================================================== -->
+    <section id="mitra" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="section-title">Mitra Kami</h2>
+        </div>
+      </div>
+
+      <div class="partner-marquee-wrap">
+        <div class="partner-marquee" id="partnerTrack">
+          <div class="partner-logo"><img src="https://placehold.co/160x80/FFFFFF/CCCCCC?text=Mitra+1" alt="Logo mitra 1"></div>
+          <div class="partner-logo"><img src="https://placehold.co/160x80/FFFFFF/CCCCCC?text=Mitra+2" alt="Logo mitra 2"></div>
+          <div class="partner-logo"><img src="https://placehold.co/160x80/FFFFFF/CCCCCC?text=Mitra+3" alt="Logo mitra 3"></div>
+          <div class="partner-logo"><img src="https://placehold.co/160x80/FFFFFF/CCCCCC?text=Mitra+4" alt="Logo mitra 4"></div>
+          <div class="partner-logo"><img src="https://placehold.co/160x80/FFFFFF/CCCCCC?text=Mitra+5" alt="Logo mitra 5"></div>
+          <div class="partner-logo"><img src="https://placehold.co/160x80/FFFFFF/CCCCCC?text=Mitra+6" alt="Logo mitra 6"></div>
+          <div class="partner-logo"><img src="https://placehold.co/160x80/FFFFFF/CCCCCC?text=Mitra+7" alt="Logo mitra 7"></div>
+          <div class="partner-logo"><img src="https://placehold.co/160x80/FFFFFF/CCCCCC?text=Mitra+8" alt="Logo mitra 8"></div>
+          <!-- Logo di atas otomatis diduplikasi oleh js/main.js agar infinite-scroll mulus -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         J. CTA
+    ========================================================== -->
+    <section id="donasi" class="cta-section" data-aos="zoom-in">
+      <div class="container text-center">
+        <h2 class="cta-title">Mari Bersama Menjaga Ibu Pertiwi</h2>
+        <p class="cta-subtitle">Setiap kontribusi Anda membawa perubahan nyata bagi laut dan daratan Indonesia.</p>
+        <a href="#kontak" class="btn btn-cta">Gabung Menjadi Relawan</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       K. FOOTER
+  ========================================================== -->
+  <footer id="kontak" class="footer-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <a href="#hero" class="d-flex align-items-center gap-2 mb-3">
+            <img src="assets/img/logo.png" alt="Logo Yayasan Lindungi Ibu Pertiwi" height="44">
+          </a>
+          <p class="footer-desc">Yayasan Lindungi Ibu Pertiwi berkomitmen menjaga laut, mangrove, dan keanekaragaman hayati Indonesia bersama masyarakat pesisir.</p>
+          <div class="footer-social d-flex gap-2">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-heading">Tautan Cepat</h3>
+          <ul class="footer-links">
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#berita">Berita</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-heading">Program</h3>
+          <ul class="footer-links">
+            <li><a href="#program">Konservasi Laut</a></li>
+            <li><a href="#program">Mangrove</a></li>
+            <li><a href="#program">Keanekaragaman Hayati</a></li>
+            <li><a href="#program">Pemberdayaan Masyarakat</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-heading">Kontak</h3>
+          <ul class="footer-contact">
+            <li><i class="bi bi-geo-alt"></i> Jakarta, Indonesia</li>
+            <li><i class="bi bi-envelope"></i> info@lindungiibupertiwi.org</li>
+            <li><i class="bi bi-telephone"></i> +62 21 0000 0000</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="text-center footer-copyright">
+        &copy; 2026 Yayasan Lindungi Ibu Pertiwi. Seluruh hak cipta dilindungi.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
